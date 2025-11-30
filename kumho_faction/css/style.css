@@ -1,0 +1,127 @@
+/* 기본 설정 */
+body {
+    margin: 0;
+    background: #f6f8fc; /* 밝은 화이트-그레이 */
+    color: #222;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVIGATION */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    background: #ffffffcc;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1a73e8; /* 파란 메인 컬러 */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.25s ease;
+}
+
+.menu a:hover {
+    color: #1a73e8;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 80vh;
+    background: url('https://i.imgur.com/az2pFJc.jpeg') center/cover no-repeat;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.40);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    top: 35%;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #1a73e8;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-top: 12px;
+    color: #333;
+}
+
+.btn-main {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 12px 34px;
+    background: #1a73e8; /* 메인 버튼 파랑 */
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(26,115,232,0.3);
+    transition: 0.25s;
+}
+
+.btn-main:hover {
+    background: #4d9cff; /* 밝은 파랑 */
+    box-shadow: 0 4px 15px rgba(26,115,232,0.4);
+}
+
+/* PAGE / SECTION */
+.page, .info {
+    padding: 60px;
+    text-align: center;
+}
+
+.page h1, .info h2 {
+    color: #1a73e8;
+}
+
+.page p, .info p {
+    color: #444;
+    font-size: 18px;
+}
+
+/* GALLERY GRID */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+    transition: 0.25s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}

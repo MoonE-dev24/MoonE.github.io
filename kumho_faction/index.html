@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>금호그룹 | 돌핀 서버</title>
+  <style>
+    :root {
+      --primary: #1b6cff;
+      --primary-light: #e8f1ff;
+      --dark: #0f172a;
+      --text: #0a0a0a;
+      --radius: 18px;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Pretendard", sans-serif;
+      background: #ffffff;
+      color: var(--text);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: white;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    nav a {
+      margin-left: 28px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 17px;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      padding: 130px 60px;
+      background: linear-gradient(135deg, var(--primary), #4c97ff);
+      color: white;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      text-align: left;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
+      max-width: 520px;
+    }
+
+    section {
+      padding: 80px 60px;
+    }
+
+    .card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 38px; /* 소개 글씨 조금 더 크게 */
+      margin-bottom: 20px;
+      color: var(--primary);
+    }
+
+    .card p {
+      font-size: 19px;
+    }
+
+    #apply .card p {
+      margin-bottom: 32px; /* 지원서 밑 글씨 조금 위쪽으로 */
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: var(--primary-light);
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">금호그룹 · Dolphin</div>
+  <nav>
+    <a href="#home">홈</a>
+    <a href="#about">소개</a>
+    <a href="#apply">지원</a>
+    <a href="#gallery">갤러리</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <h1>금호그룹</h1>
+  <p>돌핀 서버의 공식 기업 팩션. 고급스럽고 신뢰도 높은 운영을 목표로 합니다.</p>
+</div>
+
+<section id="about">
+  <div class="card">
+    <h2>소개</h2>
+    <p>
+      금호그룹은 돌핀 서버 운송 · 은행 · 시큐리티(보안) 부문을 담당하는 종합 기업 팩션입니다.
+      조직적이고 체계적인 운영 시스템을 통해 서버 내 플레이의 깊이를 더하는 역할을 하고 있습니다.
+    </p>
+  </div>
+</section>
+
+<section id="apply">
+  <div class="card">
+    <h2>지원</h2>
+    <p>지원서는 아래 버튼을 통해 제출할 수 있습니다.</p>
+    <a href="#" style="padding: 14px 26px; background: var(--primary); color: white; border-radius: 10px; text-decoration: none; font-weight: 600;">지원하기</a>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="card">
+    <h2>갤러리</h2>
+    <p>준비 중입니다.</p>
+  </div>
+</section>
+
+<footer>
+  © 2025 금호그룹 · Dolphin Server
+</footer>
+
+</body>
+</html>
